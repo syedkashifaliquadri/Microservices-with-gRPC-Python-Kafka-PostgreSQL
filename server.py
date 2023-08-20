@@ -97,25 +97,5 @@ def serve():
     print("Server terminat")
 
 
-# connection = psycopg2.connect(
-#         user="postgres",
-#         password="kashif",
-#         host="localhost",
-#         port="5432",
-#         database="postgres",
-# )
-# cursor = connection.cursor()
-# cursor.execute("SELECT * FROM users;")
-# cursor.execute("INSERT INTO users (name) VALUES (%s) RETURNING id;", ('Syed',))
-# cursor.execute("UPDATE users SET name = %s WHERE id = %s;", ('ALI', 10))
-# cursor.execute("DELETE FROM users WHERE id = %s;", (11,))
-# cursor.execute("SELECT * FROM users WHERE id = %s;", (10,))
-# connection.commit()
-
-# cursor.execute("SELECT * FROM users")
-# data = cursor.fetchall()
-# print(data)
-
 if __name__ == '__main__':
     serve()
-    # print('serve()')

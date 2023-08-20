@@ -2,21 +2,26 @@ import grpc
 import todo_pb2
 import todo_pb2_grpc
 
+
 def create_data(stub, data):
     response = stub.CreateData(todo_pb2.CreateRequest(data=data))
     print("Create:", response.reply)
+
 
 def read_data(stub, id):
     response = stub.ReadData(todo_pb2.ReadRequest(id=id))
     print("Read:", response.reply)
 
+
 def update_data(stub, id, data):
     response = stub.UpdateData(todo_pb2.UpdateRequest(id=id, data=data))
     print("Update:", response.reply)
 
+
 def delete_data(stub, id):
     response = stub.DeleteData(todo_pb2.DeleteRequest(id=id))
     print("Delete:", response.reply)
+
 
 def run():
     try:
@@ -42,6 +47,7 @@ def run():
             delete_data(stub, id=id)
     except Exception as err:
         print(err)
+
 
 if __name__ == '__main__':
     run()
