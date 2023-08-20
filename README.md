@@ -1,5 +1,6 @@
 # gRPC-with-Python-and-Kafka-for-Microservices
 This repository provides a practical example of buildin a microservices architecture using gRPC with Python and Apache Kafka for asynchronous communication between services. The combination of gRPC and Kafka offers a powerful solution for developing scalable and decoupled microservices that can handle various functionalities independently.
+
 Required Commands:
 
 .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
