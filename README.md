@@ -12,7 +12,7 @@ Required Commands:
 
     .\bin\windows\kafka-server-start.bat .\config\server.properties
     
-    kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partition 1 --topic todo
+    kafka-topics.bat --create --bootstrap-server localhost:9092 --topic todo
     
     kafka-console-producer.bat --broker-list localhost:9092 --topic todo
     
